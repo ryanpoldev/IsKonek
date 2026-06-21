@@ -1,0 +1,145 @@
+@import url(style.css);
+
+.members-panel {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.members-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.section-badge {
+  background: #f0faf5;
+  color: var(--accent-green);
+  border: 1px solid #b3e6cc;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+}
+
+.member-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.1s;
+}
+
+.member-row:last-child {
+  border-bottom: none;
+}
+
+.member-row:hover {
+  background: var(--bg-main);
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.member-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.member-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.manager-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff8e1;
+  color: #b7791f;
+  border: 1px solid #f6e05e;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  margin-left: 6px;
+}
+
+.you-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #f0faf5;
+  color: var(--accent-green);
+  border: 1px solid #b3e6cc;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  margin-left: 6px;
+}
+
+.btn-add-member {
+  background: var(--accent-green);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-heading);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+  cursor: pointer;
+}
+
+.btn-add-member:hover {
+  background: #28a06a;
+  color: white;
+}
+
+.empty-state {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.search-bar {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  outline: none;
+  width: 220px;
+  font-family: var(--font-main);
+}
+
+.search-bar:focus {
+  border-color: var(--accent-green);
+}
